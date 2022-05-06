@@ -510,8 +510,6 @@ h4{
 .badges-col ul li a{
     position: relative;
     display:block;
-    width:150px;
-    height:150px;
     line-height:50px;
     text-align:center;
     border-radius: 10px;
@@ -520,6 +518,7 @@ h4{
     background: #fff;
     box-shadow: 2px 2px 2px rgb(34 35 58 / 50%);
     opacity: 0;
+    
     
 }
 .badges-col ul li a:hover{
@@ -530,12 +529,32 @@ h4{
 .badges-col ul li a #clouden{
     position: relative;
     display:block;
-    width: 150px;
-    height:150px;
     border-radius: 15px;
-    
+}
+@media only screen and (max-width:600px){
+    .badges-col ul li a{width: 80px; height: 80px;}
+    .bages-col ul li a #clouden {width: 80px; height: 80px;}
 }
 
+@media only screen and (min-width:600px){
+    .badges-col ul li a{width: 90px; height: 90px;}
+    .badges-col ul li a #clouden {width: 90px; height: 90px;}
+}
+
+@media only screen and (min-width:768px){
+    .badges-col ul li a{width: 95px; height: 95px;}
+    .badges-col ul li a #clouden{width: 95px; height: 95px;}
+}
+
+@media only screen and (min-width:992px){
+    .badges-col ul li a{width: 130px; height: 130px;}
+    .badges-col ul li a #clouden{width: 130px; height: 130px;}
+}
+
+@media only screen and (min-width:1200px){
+    .badges-col ul li a{width: 160px; height: 160px;}
+    .badges-col ul li a #clouden{width: 160px; height: 160px;}
+}
 @keyframes hei{
     from{
         height: 100px;
