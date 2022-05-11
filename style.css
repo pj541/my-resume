@@ -227,7 +227,13 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom:50px;
     
+}
+.sec2:hover .bio_base{
+    transform: scale3d(0.97, 0.97,0.97);
+    transition: .5s;
+    border: 1px solid lightgray;
 }
 .bio_base{
     position: relative;
@@ -465,7 +471,29 @@ h4{
     animation-name: hei;
     animation-duration: .5s;
 }
+.detailsview .bio .profiledet{
+  display: none;
 
+}
+.detailsview .bio .profiledet .badges-col{
+  display:none;
+}
+.detailsview .bio .profiledet .badges-col ul li{
+  display:none;
+}
+
+.detailsview:hover .bio .profiledet{
+  display:block;
+  transition-delay: 5s;
+}
+.detailsview:hover .bio .profiledet .badges-col{
+  display:block;
+  transition-delay: .5s;
+}
+.detailsview:hover .bio .profiledet .badges-col ul li{
+  display:block;
+  transition-delay: .5s;
+}
 .detailsview:hover .bio .profiledet .badges-col ul li a{
     opacity: 1;
     transition-delay: .4s;
@@ -484,6 +512,7 @@ h4{
     position: relative;
     width: 100%;
     height: 100%;
+    display: none;
     align-items: center;
     justify-content: center;
     padding:20px 20px 20px 20px;
@@ -505,6 +534,7 @@ h4{
 }
 .badges-col ul li{
     list-style: none;
+    display: none;
     
 }
 .badges-col ul li a{
@@ -696,6 +726,11 @@ h4{
     align-items: center;
     border-radius: 15px;
 }
+.navigation:hover{
+    transform: scale3d(0.95, 0.95,0.95);
+    transition: .5s;
+    border: 1px solid lightgray;
+}
 .navigation ul{
     display: flex;
     width: 900px;
@@ -803,4 +838,311 @@ h4{
 }
 .navigation ul li:nth-child(8).active ~ .indicator{
     transform: translateX(calc(112px * 7));
+}
+.edudetails{
+    position: relative;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(149deg, #caebffc9 0%, #ffc6c690 100%);
+    border-radius: 15px;
+    border:2px solid lightyellow;
+    padding: 20px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.edudetails::before{
+    content:"";
+    background-image: url('images/education.png');
+    background-size:cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    opacity: 0.13;
+}
+.gradtitle{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+    height:10%;
+    padding: 15px 40px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, rgb(2 43 75 / 56%) 0%, #0094ff1c 100%);
+    box-shadow: 0 9px 10px rgb(0 0 0 / 35%);
+    display: flex;
+    align-items: center;
+  }
+  
+  .Loading {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 14px;
+    padding:2px;
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    overflow: hidden;
+    
+    
+  }
+  .loadnew{
+    position: relative;
+    display: block;
+    width: 0;
+    height: 100%;
+   /* background: #f1f1f1;*/
+    background:#494d5f;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    overflow: hidden;
+    animation: load 5s normal forwards;
+    
+    
+  }
+  .loadtentwelve{
+    position: relative;
+    display: block;
+    width: 0;
+    height: 100%;
+    background:#494d5f;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    overflow: hidden;
+    animation: tentwelvebar 5s normal forwards; 
+  }
+  /*.Loading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+
+  }
+ */ 
+ @keyframes tentwelvebar {
+    0% {
+        width: 0;
+        background: #ff9fb9;
+      }
+      
+      25% {
+        width: 15%;
+        background: #5ca8ce;
+      }
+      
+      50% {
+        width: 30%;
+        background: #f78a9d;
+      }
+      
+      75% {
+        width: 50%;
+        background: #9070cc;
+      }
+      
+      100% {
+        width: 61.4%;
+        background: #484f6f;
+      }
+ }
+  @keyframes load {
+
+        0% {
+            width: 0;
+            background: #ff9fb9;
+          }
+          
+          25% {
+            width: 15%;
+            background: #5ca8ce;
+          }
+          
+          50% {
+            width: 30%;
+            background: #f78a9d;
+          }
+          
+          75% {
+            width: 60%;
+            background: #9070cc;
+          }
+          
+          100% {
+            width: 62.2%;
+            background: #484f6f;
+          }
+          
+  }
+
+  .loadten{
+    position: relative;
+    display: block;
+    width: 0;
+    height: 100%;
+    background:#494d5f;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    overflow: hidden;
+    animation: tenbar 5s normal forwards; 
+  }
+  
+  @keyframes tenbar {
+    0% {
+        width: 0;
+        background: #ff9fb9;
+      }
+      
+      25% {
+        width: 20%;
+        background: #5ca8ce;
+      }
+      
+      50% {
+        width: 50%;
+        background: #f78a9d;
+      }
+      
+      75% {
+        width: 69%;
+        background: #9070cc;
+      }
+      
+      100% {
+        width: 89.3%;
+        background: #484f6f;
+      }
+  }
+  .edudetails ul{
+      list-style: none;
+  }
+  .edudetails ul li{
+    display: none;
+    opacity:0;
+    animation: showlist;
+    animation-duration: .9s;
+    transition: .5s;
+}
+.edudetails:hover ul li {
+    display:block;
+    opacity:1;
+    transition: .5s;
+    animation: revshowlist;
+    animation-duration: .5s;
+    margin-bottom:25px;
+}
+.edudetails:hover ul li .basede .basebody span#percval:after{
+    content: '0%';
+    animation: per 5s normal forwards;
+}
+@keyframes per {
+    0% {
+       content: '0%';
+      }
+      
+      25% {
+        content: '15%';
+      }
+      
+      50% {
+        content: '30%';
+      }
+      
+      75% {
+        content: '60%';
+      }
+      
+      100% {
+        content: '62.2%';
+      }
+}
+.edudetails:hover ul li .basede .basebody span#perctentwelve:after{
+    content: '0%';
+    animation: pertentwelve 5s normal forwards;
+}
+.edudetails .basicdet .gradtitle .basebody::after{
+    content: 'SHOW DETAILS<<<';
+}
+.edudetails:hover .basicdet .gradtitle .basebody::after{
+    
+    opacity: 0;
+}
+@keyframes pertentwelve {
+    0% {
+        content: '0%';
+       }
+       
+       25% {
+         content: '15%';
+       }
+       
+       50% {
+         content: '30%';
+       }
+       
+       75% {
+         content: '50%';
+       }
+       
+       100% {
+         content: '61.4%';
+       }
+}
+
+.edudetails:hover ul li .basede .basebody span#percten:after{
+    content: '0%';
+    animation: perten 5s normal forwards;
+}
+@keyframes perten {
+    0% {
+        content: '0%';
+       }
+       
+       25% {
+         content: '20%';
+       }
+       
+       50% {
+         content: '50%';
+       }
+       
+       75% {
+         content: '69%';
+       }
+       
+       100% {
+         content: '89.3%';
+       }
+}
+@keyframes showlist {
+    from{
+        display: block;
+        opacity: 1;
+    }
+    to{
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes revshowlist{
+    from{
+        display:none;
+        opacity: 0;
+    }
+    to{
+        display:block;
+        opacity:1;
+    }
 }
