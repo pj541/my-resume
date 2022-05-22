@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
     <head>
@@ -11,364 +10,376 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </head>
     <body>
-
-        <header>
-            <a href="#" class="logo">HIRE ME BOSS</a>
-            <u1>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="error.html">About Me</a></li>
-                <li><a href="error.html">Contact</a></li>
-                <li><a href="error.html">LOGIN</a></li>
-            </u1>
-        </header>
-        <section>
-            <img src="images/stars.png" id="stars">
-            <img src="images/moon.png" id="moon">
-            <img src="images/mountains_behind.png" id="mountains_behind">
-            <div class="container" >
-                <p id="text1"><span class="typed-text" ></span><span class="cursor">&nbsp;</span></p>
-            </div>
-            <a href="#sec" id="btn" class="active">Explore</a>
-            <img src="images/mountains_front.png" id="mountains_front">  
-            
-        </section>
-        <div class="sec" id="sec">
-            <div class="sec1">
-                <div class="navigation">
-                    <ul>
-                        <li class=" list active">
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="person-circle-outline"></ion-icon>
-                                </span>
-                                <span class="text">Bio data</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="school-outline"></ion-icon>
-                                </span>
-                                <span class="text">Education</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="hammer-outline"></ion-icon>
-                                </span>
-                                <span class="text">Skills</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="document-outline"></ion-icon>
-                                </span>
-                                <span class="text">Certifications</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="settings-outline"></ion-icon>
-                                </span>
-                                <span class="text">Activities</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="trophy-outline"></ion-icon>
-                                </span>
-                                <span class="text">Achievements</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="book-outline"></ion-icon>
-                                </span>
-                                <span class="text">Interest</span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#">
-                                <span class="icon">
-                                    <ion-icon name="language-outline"></ion-icon>
-                                </span>
-                                <span class="text">Languages</span>
-                            </a>
-                        </li>
-                        <div class="indicator" id="ind">
-                        </div>
-                    </ul>
-                </div>  
-            </div>
-            <div class="sec2">
-                <div class="bio_base">
-                    <div class="bio">
-                            <div class="profilepic">
-                                <img src="images/profile.jpg" alt="faceID" id="face">
-                                <ul class="social-icons">
-                                    <li>
-                                      <a href="https://www.github.com/pj541/">
-                                        <ion-icon name="logo-github" class="logopf"></ion-icon>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="https://www.smartcityservice.azurewebsites.net/">
-                                        <ion-icon name="globe-outline" class="logopf"></ion-icon>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="https://www.bit.ly/prajwal-jha-qwiklabs">
-                                        <ion-icon name="logo-google" class="logopf"></ion-icon>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="https://www.docs.microsoft.com/en-us/users/prajwaljha-5443/">
-                                          <ion-icon name="logo-microsoft" class="logopf"></ion-icon>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="https://www.linkedin.com/in/prajwal-jha">
-                                        <ion-icon name="logo-linkedin" class="logopf"></ion-icon>
-                                      </a>
-                                    </li>
+        <div id="loader" class='pac-man'></div>
+        <main style="display: none;">
+            <header>
+                <a href="#" class="logo">HIRE ME BOSS</a>
+                <u1>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="error.html">About Me</a></li>
+                    <li><a href="error.html">Contact</a></li>
+                    <li><a href="error.html">LOGIN</a></li>
+                </u1>
+            </header>
+            <section>
+                <img src="images/stars.png" id="stars">
+                <img src="images/moon.png" id="moon">
+                <img src="images/mountains_behind.png" id="mountains_behind">
+                <div class="container" >
+                    <p id="text1"><span class="typed-text" ></span><span class="cursor">&nbsp;</span></p>
+                </div>
+                <a href="#sec" id="btn" class="active">Explore</a>
+                <img src="images/mountains_front.png" id="mountains_front">  
+                
+            </section>
+            <div class="sec" id="sec">
+                <div class="sec1">
+                    <div class="navigation">
+                        <ul>
+                            <li class=" list active">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="person-circle-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Bio data</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="school-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Education</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="hammer-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Skills</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="document-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Certifications</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="settings-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Activities</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="trophy-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Achievements</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="book-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Interest</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="language-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Languages</span>
+                                </a>
+                            </li>
+                            <div class="indicator" id="ind">
+                            </div>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="sec2">
+                    <div class="bio_base">
+                        <div class="bio">
+                                <div class="profilepic">
+                                    <img src="images/profile.jpg" alt="faceID" id="face">
+                                    <ul class="social-icons">
+                                        <li>
+                                          <a href="https://www.github.com/pj541/">
+                                            <ion-icon name="logo-github" class="logopf"></ion-icon>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.smartcityservice.azurewebsites.net/">
+                                            <ion-icon name="globe-outline" class="logopf"></ion-icon>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.bit.ly/prajwal-jha-qwiklabs">
+                                            <ion-icon name="logo-google" class="logopf"></ion-icon>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.docs.microsoft.com/en-us/users/prajwaljha-5443/">
+                                              <ion-icon name="logo-microsoft" class="logopf"></ion-icon>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.linkedin.com/in/prajwal-jha">
+                                            <ion-icon name="logo-linkedin" class="logopf"></ion-icon>
+                                          </a>
+                                        </li>
+                                        
+                                    </ul>
+                                    <div class="details">
+                                        <h2>Prajwal Jha
+                                          <br>
+                                          <span class="job-title">Software Developer/ FS Web Developer</span>
+                                        </h2>
+                                    </div>
+                                    <h3>^ VIEW MORE</h3>
+                                </div>
+                                <div class="profiledet">
+                                    <div class="basede">
+                                        <div class="basicdet">
+                                            <span class="icon">
+                                                <ion-icon name="pencil"></ion-icon>
+                                            </span>
+                                            <span class="headtext">BASIC DETAILS</span>
+                                        </div>
+                                        <span class="basebody">I aspire to be a Cloud Practitioner as well as a Network and Security Professional. My aim is to enhance my knowledge based on the practical learnings of the subject. I seek a challenging role in an organization where I can use my Intelligence and skills for the betterment of the organization and to also grow professionally.</span>
+                                    </div>
+                                    <div class="baseaddr">
+                                        <div class="basicdet">
+                                            <span class="icon">
+                                                <ion-icon name="home"></ion-icon>
+                                            </span>
+                                            <span class="basebody">Flat No - 204, Sai Paradise Apt, HMT Oﬃcer's Colony, 500010, Secunderabad, India.</span>
+                                        </div>
+                                    </div>
+                                    <div class="basephone">
+                                        <div class="phone" style="width: 80%;">
+                                            <div class="basicdet" style="padding: 10px;">
+                                                <span class="icon">
+                                                    <ion-icon name="call"></ion-icon>
+                                                </span>
+                                                <a href="tel:+918328217034" class="mailph"><span class="basebody">8328217034</span></a>
+                                            </div>
+                                        </div>
+                                        <div style="background: transparent; width: 15%;">
+                                            
+                                        </div>
+                                        <div class="phone">
+                                            <div class="basicdet" style="padding: 10px;">
+                                                <span class="icon">
+                                                    <ion-icon name="calendar-number"></ion-icon>
+                                                </span>
+                                                <span class="basebody">11 February 2001</span>
+                                            </div>
+                                        </div>
+                                        <div style="background: transparent; width: 15%;">
+                                            
+                                        </div>
+                                        <div class="phone">
+                                            <div class="basicdet" style="padding: 10px;">
+                                                <span class="icon">
+                                                    <ion-icon name="mail-open"></ion-icon>
+                                                </span>
+                                                <a href="mailto:prajwaljha01@gmail.com" class="mailph"><span class="basebody">prajwaljha01@gmail.com</span></a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                     
+                                    <div class="detailsview">
+                                        <div class="bio" style="background: transparent; background-blend-mode: lighten;">
+                                            <div class="profilepic" style="padding:0px;">
+                                                <div class="scroller"> 
+                                                    <div class="basede" style="height: auto;margin-bottom: 10px; box-shadow: 2px 2px 2px rgb(34 35 58 / 50%);">
+                                                        <div class="basicdet">
+                                                            <span class="icon">
+                                                                <ion-icon name="brush-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="headtext" style="font-size:medium; font-weight:400;">Hobbies</span>
+                                                        </div>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Playing chess ♟️/ Video Games. 🎮</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Basketball. 🏀</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Movies Exploration. 🎬</span>
+                                                    </div>
+                                                    <div class="basede" style="height: auto; margin-bottom: 10px; box-shadow: 2px 2px 2px rgb(34 35 58 / 50%);">
+                                                        <div class="basicdet">
+                                                            <span class="icon">
+                                                                <ion-icon name="barbell-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="headtext" style="font-size:medium; font-weight:400;">Strength</span>
+                                                        </div>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Hardworking.</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Self-Learner.</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Dedicated towards the Job / Work.</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Quick Learner.</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Mostly Attentive and Innovative Sometimes.</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Honest towards my Work.</span>
+                                                    </div>
+                                                    <div class="basede" style="height: auto; margin-bottom: 10px; box-shadow: 2px 2px 2px rgb(34 35 58 / 50%);">
+                                                        <div class="basicdet">
+                                                            <span class="icon">
+                                                                <ion-icon name="thumbs-down-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="headtext" style="font-size:medium; font-weight:400;">Weaknesses</span>
+                                                        </div>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Less confident in my Skills.</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Give priority to work before my Comfort.</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Do not possess great Presentation Skills.</span>
+                                                        <span class="basebody" style="font-size:0.9em; font-weight: 369;">Too Direct.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="profiledet" style="width: 100%; padding: 0px;">
+                                                <div class="badges-col">
+                                                    <div class="basicdet" style="justify-content: center;">
+                                                        <span class="icon">
+                                                            <ion-icon name="shield-checkmark"></ion-icon>
+                                                        </span>
+                                                        <span class="headtext" style="font-size:1.3em; font-weight:400;">Badges</span>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="https://www.qwiklabs.com/public_profiles/77da0732-9107-4819-b237-39ee588a0170/badges/433362"><img src="images/clouden.png" id="clouden"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.credly.com/badges/ce775aa7-a19d-4be7-876f-e6b592d71441/public_url"><img src="images/google-it-support-certificate.png" id="clouden"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.qwiklabs.com/public_profiles/77da0732-9107-4819-b237-39ee588a0170/badges/427310"><img src="images/cr_mg_Cloud.png" id="clouden"></a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="https://www.credly.com/badges/7a0c5a4b-082a-4a47-b593-75e3fe991eb5/public_url"><img src="images/penetration-testing-incident-response-and-forensics.png" id="clouden"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="viewmore">
+                                        <h3>^VIEW MORE</h3>
+                                    </div>  
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="bio_base" style="height: 100%;">
+                        <div class="bio">
+                            <div class="edudetails">
+                                <div class="basicdet" style="margin-bottom:10px;">
+                                    <span class="icon">
+                                        <ion-icon name="book"></ion-icon>
+                                    </span>
+                                    <div class="gradtitle">
+                                        <span class="headtext" style="width: 100%;">EDUCATION DETAILS</span>
+                                        <span class="basebody" style="width: 100%; display: flex; justify-content: flex-end;"><button id="hidedet" onclick="hidesome()">Hide Details >>></button><button id="showdet" onclick="displaysome()">Show Details >>></button></span>
+    
+                                    </div>
+                                   
+                                </div>
+                                <br>
+                                <ul id="dekhodetails">
+                                    <li>
+                                        <div class="basede" style="background: linear-gradient(172deg, #f1ebff 10%, #b7f0ff80 100%); box-shadow: 0 10px 20px rgb(190 0 255 / 16%); height:100%;">
+                                            <div class="gradtitle">
+                                                <span class="basebody" style="font-weight:420; font-size: 1.2em; width: 100%;">B.Tech in Computer Science and Engineering.</span>
+                                                <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%;"><i>06/2019 - Present.</i></span>
+                                            </div>
+                                            <div class="gradtitle">
+                                                <span class="basebody" style="font-weight:389; font-size: 1.0em; width: 100%;"><i>CMR Engineering College, Medchal.</i></span>
+                                                <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%; letter-spacing: 1px;"><i>JNTUH</i></span>
+                                            </div>
+                                            <span class="basebody" style="font-weight:389; font-size: 1.0em; display: flex; flex-direction: row;">Percentage:&nbsp; <span  id="percval"> </span></span>
+                                            <!--span class="basebody" style="font-weight:389; font-size: 0.8em;"><i>06/2019 - Present.</i></span-->
+                                            <span class="basebody">
+                                                <div class="container1">
+                                                    <div class="Loading">
+                                                        <div class="loadnew"></div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="basede" style="background: linear-gradient(172deg, #f1ebff 10%, #b7f0ff80 100%); box-shadow: 0 10px 20px rgb(190 0 255 / 16%); height:100%;">
+                                            <div class="gradtitle">
+                                                <span class="basebody" style="font-weight:420; font-size: 1.2em; width: 100%;">10+2 (Senior School Certifications Examination).</span>
+                                                <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%;"><i>06/2017 - 04/2019.</i></span>
+                                            </div>
+                                            <div class="gradtitle">
+                                                <span class="basebody" style="font-weight:389; font-size: 1.0em; width: 100%;"><i>Pallavi Model School - Alwal.</i></span>
+                                                <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%; letter-spacing: 1px;"><i>CBSE</i></span>
+                                            </div>
+                                            
+                                            
+                                            <span class="basebody" style="font-weight:389; font-size: 1.0em; display: flex; flex-direction: row;">Percentage:&nbsp; <span  id="perctentwelve"> </span></span>
+                                            <!--span class="basebody" style="font-weight:389; font-size: 0.8em;"><i>06/2019 - Present.</i></span-->
+                                            <span class="basebody">
+                                                <div class="container1">
+                                                    <div class="Loading">
+                                                        <div class="loadtentwelve"></div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="basede" style="background: linear-gradient(172deg, #f1ebff 10%, #b7f0ff80 100%); box-shadow: 0 10px 20px rgb(190 0 255 / 16%); height:100%;">
+                                            <div class="gradtitle">
+                                                <span class="basebody" style="font-weight:420; font-size: 1.2em; width: 100%;">10th (Secondary School Examination).</span>
+                                                <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%;"><i>03/2016 - 04/2017.</i></span>
+                                            </div>
+                                            <div class="gradtitle">
+                                                <span class="basebody" style="font-weight:389; font-size: 1.0em; width: 100%;"><i>Pallavi Model School - Alwal.</i></span>
+                                                <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%; letter-spacing: 1px;"><i>CBSE</i></span>
+                                            </div>
+                                            
+                                            
+                                            <span class="basebody" style="font-weight:389; font-size: 1.0em; display: flex; flex-direction: row;">Percentage:&nbsp; <span  id="percten"> </span></span>
+                                            <!--span class="basebody" style="font-weight:389; font-size: 0.8em;"><i>06/2019 - Present.</i></span-->
+                                            <span class="basebody">
+                                                <div class="container1">
+                                                    <div class="Loading">
+                                                        <div class="loadten"></div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </li>
                                 </ul>
-                                <div class="details">
-                                    <h2>Prajwal Jha
-                                      <br>
-                                      <span class="job-title">Software Developer/ FS Web Developer</span>
-                                    </h2>
-                                </div>
-                                <h3>^ VIEW MORE</h3>
                             </div>
-                            <div class="profiledet">
-                                <div class="basede">
-                                    <div class="basicdet">
-                                        <span class="icon">
-                                            <ion-icon name="pencil"></ion-icon>
-                                        </span>
-                                        <span class="headtext">BASIC DETAILS</span>
-                                    </div>
-                                    <span class="basebody">I aspire to be a Cloud Practitioner as well as a Network and Security Professional. My aim is to enhance my knowledge based on the practical learnings of the subject. I seek a challenging role in an organization where I can use my Intelligence and skills for the betterment of the organization and to also grow professionally.</span>
-                                </div>
-                                <div class="baseaddr">
-                                    <div class="basicdet">
-                                        <span class="icon">
-                                            <ion-icon name="home"></ion-icon>
-                                        </span>
-                                        <span class="basebody">Flat No - 204, Sai Paradise Apt, HMT Oﬃcer's Colony, 500010, Secunderabad, India.</span>
-                                    </div>
-                                </div>
-                                <div class="basephone">
-                                    <div class="phone" style="width: 80%;">
-                                        <div class="basicdet" style="padding: 10px;">
-                                            <span class="icon">
-                                                <ion-icon name="call"></ion-icon>
-                                            </span>
-                                            <a href="tel:+918328217034" class="mailph"><span class="basebody">8328217034</span></a>
-                                        </div>
-                                    </div>
-                                    <div style="background: transparent; width: 15%;">
-                                        
-                                    </div>
-                                    <div class="phone">
-                                        <div class="basicdet" style="padding: 10px;">
-                                            <span class="icon">
-                                                <ion-icon name="calendar-number"></ion-icon>
-                                            </span>
-                                            <span class="basebody">11 February 2001</span>
-                                        </div>
-                                    </div>
-                                    <div style="background: transparent; width: 15%;">
-                                        
-                                    </div>
-                                    <div class="phone">
-                                        <div class="basicdet" style="padding: 10px;">
-                                            <span class="icon">
-                                                <ion-icon name="mail-open"></ion-icon>
-                                            </span>
-                                            <a href="mailto:prajwaljha01@gmail.com" class="mailph"><span class="basebody">prajwaljha01@gmail.com</span></a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="detailsview">
-                                    <div class="bio" style="background: transparent; background-blend-mode: lighten;">
-                                        <div class="profilepic" style="padding:0px;">
-                                            <div class="scroller"> 
-                                                <div class="basede" style="height: auto;margin-bottom: 10px; box-shadow: 2px 2px 2px rgb(34 35 58 / 50%);">
-                                                    <div class="basicdet">
-                                                        <span class="icon">
-                                                            <ion-icon name="brush-outline"></ion-icon>
-                                                        </span>
-                                                        <span class="headtext" style="font-size:medium; font-weight:400;">Hobbies</span>
-                                                    </div>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Playing chess ♟️/ Video Games. 🎮</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Basketball. 🏀</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Movies Exploration. 🎬</span>
-                                                </div>
-                                                <div class="basede" style="height: auto; margin-bottom: 10px; box-shadow: 2px 2px 2px rgb(34 35 58 / 50%);">
-                                                    <div class="basicdet">
-                                                        <span class="icon">
-                                                            <ion-icon name="barbell-outline"></ion-icon>
-                                                        </span>
-                                                        <span class="headtext" style="font-size:medium; font-weight:400;">Strength</span>
-                                                    </div>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Hardworking.</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Self-Learner.</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Dedicated towards the Job / Work.</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Quick Learner.</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Mostly Attentive and Innovative Sometimes.</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Honest towards my Work.</span>
-                                                </div>
-                                                <div class="basede" style="height: auto; margin-bottom: 10px; box-shadow: 2px 2px 2px rgb(34 35 58 / 50%);">
-                                                    <div class="basicdet">
-                                                        <span class="icon">
-                                                            <ion-icon name="thumbs-down-outline"></ion-icon>
-                                                        </span>
-                                                        <span class="headtext" style="font-size:medium; font-weight:400;">Weaknesses</span>
-                                                    </div>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Less confident in my Skills.</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Give priority to work before my Comfort.</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Do not possess great Presentation Skills.</span>
-                                                    <span class="basebody" style="font-size:0.9em; font-weight: 369;">Too Direct.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profiledet" style="width: 100%; padding: 0px;">
-                                            <div class="badges-col">
-                                                <div class="basicdet" style="justify-content: center;">
-                                                    <span class="icon">
-                                                        <ion-icon name="shield-checkmark"></ion-icon>
-                                                    </span>
-                                                    <span class="headtext" style="font-size:1.3em; font-weight:400;">Badges</span>
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://www.qwiklabs.com/public_profiles/77da0732-9107-4819-b237-39ee588a0170/badges/433362"><img src="images/clouden.png" id="clouden"></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.credly.com/badges/ce775aa7-a19d-4be7-876f-e6b592d71441/public_url"><img src="images/google-it-support-certificate.png" id="clouden"></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.qwiklabs.com/public_profiles/77da0732-9107-4819-b237-39ee588a0170/badges/427310"><img src="images/cr_mg_Cloud.png" id="clouden"></a>
-                                                    </li>
-                                                </ul>
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://www.credly.com/badges/7a0c5a4b-082a-4a47-b593-75e3fe991eb5/public_url"><img src="images/penetration-testing-incident-response-and-forensics.png" id="clouden"></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="viewmore">
-                                    <h3>^VIEW MORE</h3>
-                                </div>  
-                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="sec2">
-                <div class="bio_base" style="height: 100%;">
-                    <div class="bio">
-                        <div class="edudetails">
-                            <div class="basicdet" style="margin-bottom:10px;">
-                                <span class="icon">
-                                    <ion-icon name="book"></ion-icon>
-                                </span>
-                                <div class="gradtitle">
-                                    <span class="headtext" style="width: 100%;">EDUCATION DETAILS</span>
-                                    <span class="basebody" style="font-weight:389; font-size: 1.0em; text-align: right; width: 100%; letter-spacing: 1px;"></span>
-                                </div>
-                               
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="basede" style="background: linear-gradient(172deg, #f1ebff 10%, #b7f0ff80 100%); box-shadow: 0 10px 20px rgb(190 0 255 / 16%); height:100%;">
-                                        <div class="gradtitle">
-                                            <span class="basebody" style="font-weight:420; font-size: 1.2em; width: 100%;">B.Tech in Computer Science and Engineering.</span>
-                                            <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%;"><i>06/2019 - Present.</i></span>
-                                        </div>
-                                        <div class="gradtitle">
-                                            <span class="basebody" style="font-weight:389; font-size: 1.0em; width: 100%;"><i>CMR Engineering College, Medchal.</i></span>
-                                            <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%; letter-spacing: 1px;"><i>JNTUH</i></span>
-                                        </div>
-                                        <span class="basebody" style="font-weight:389; font-size: 1.0em; display: flex; flex-direction: row;">Percentage:&nbsp; <span  id="percval"> </span></span>
-                                        <!--span class="basebody" style="font-weight:389; font-size: 0.8em;"><i>06/2019 - Present.</i></span-->
-                                        <span class="basebody">
-                                            <div class="container1">
-                                                <div class="Loading">
-                                                    <div class="loadnew"></div>
-                                                </div>
-                                            </div>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="basede" style="background: linear-gradient(172deg, #f1ebff 10%, #b7f0ff80 100%); box-shadow: 0 10px 20px rgb(190 0 255 / 16%); height:100%;">
-                                        <div class="gradtitle">
-                                            <span class="basebody" style="font-weight:420; font-size: 1.2em; width: 100%;">10+2 (Senior School Certifications Examination).</span>
-                                            <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%;"><i>06/2017 - 04/2019.</i></span>
-                                        </div>
-                                        <div class="gradtitle">
-                                            <span class="basebody" style="font-weight:389; font-size: 1.0em; width: 100%;"><i>Pallavi Model School - Alwal.</i></span>
-                                            <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%; letter-spacing: 1px;"><i>CBSE</i></span>
-                                        </div>
-                                        
-                                        
-                                        <span class="basebody" style="font-weight:389; font-size: 1.0em; display: flex; flex-direction: row;">Percentage:&nbsp; <span  id="perctentwelve"> </span></span>
-                                        <!--span class="basebody" style="font-weight:389; font-size: 0.8em;"><i>06/2019 - Present.</i></span-->
-                                        <span class="basebody">
-                                            <div class="container1">
-                                                <div class="Loading">
-                                                    <div class="loadtentwelve"></div>
-                                                </div>
-                                            </div>
-                                        </span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="basede" style="background: linear-gradient(172deg, #f1ebff 10%, #b7f0ff80 100%); box-shadow: 0 10px 20px rgb(190 0 255 / 16%); height:100%;">
-                                        <div class="gradtitle">
-                                            <span class="basebody" style="font-weight:420; font-size: 1.2em; width: 100%;">10th (Secondary School Examination).</span>
-                                            <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%;"><i>03/2016 - 04/2017.</i></span>
-                                        </div>
-                                        <div class="gradtitle">
-                                            <span class="basebody" style="font-weight:389; font-size: 1.0em; width: 100%;"><i>Pallavi Model School - Alwal.</i></span>
-                                            <span class="basebody" style="font-weight:389; font-size: 0.8em; text-align: right; width: 100%; letter-spacing: 1px;"><i>CBSE</i></span>
-                                        </div>
-                                        
-                                        
-                                        <span class="basebody" style="font-weight:389; font-size: 1.0em; display: flex; flex-direction: row;">Percentage:&nbsp; <span  id="percten"> </span></span>
-                                        <!--span class="basebody" style="font-weight:389; font-size: 0.8em;"><i>06/2019 - Present.</i></span-->
-                                        <span class="basebody">
-                                            <div class="container1">
-                                                <div class="Loading">
-                                                    <div class="loadten"></div>
-                                                </div>
-                                            </div>
-                                        </span>
-                                    </div>
-                                </li>
-                            </ul>
-
+                <div class="sec2">
+                    <div class="bio_base" >
+                        <div class="bio" style="overflow: hidden;">
+                            <div id="chartContainer" style="height: 100%; width: 100%;"></div>
+                            <div id="chartContainer1" style="height: 100%; width: 100%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
+        
         <script>
             /* Storing user's device details in a variable*/
             let details = navigator.userAgent;
@@ -391,6 +402,20 @@
         </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            function displaysome (){
+                document.getElementById('dekhodetails').style.display='block';
+                document.getElementById('showdet').style.display='none';
+                document.getElementById('hidedet').style.display='block';
+            }
+            function hidesome(){
+                document.getElementById('dekhodetails').style.display='none';
+                document.getElementById('hidedet').style.display='none';
+                document.getElementById('showdet').style.display='block';
+                
+            }
+        </script>
         <script>
 
             const typedTextSpan = document.querySelector(".typed-text");
@@ -441,6 +466,7 @@
             let mountains_behind= document.getElementById('mountains_behind');
             let mountains_front= document.getElementById('mountains_front');
             let btn= document.getElementById('btn');
+
             
             window.addEventListener('scroll', function(){
                 let value= window.scrollY;
@@ -453,6 +479,7 @@
                 moon.style.left = value* 0.35 +'px';
             
             }
+            
             })
             
         </script>
@@ -463,6 +490,89 @@
                 this.classList.add('active');
             }
             list.forEach((item)=> item.addEventListener('click', activeLink));
+        </script>
+        <script type="text/javascript">
+            $(window).on('load', function(){
+    
+                //
+                $("main").fadeIn(50, function(){
+                    $("main").show();
+                });
+                $("#loader").fadeOut(500, function(){
+                    $("#loader").hide();
+                });
+                //
+                
+                var chart = new CanvasJS.Chart("chartContainer", {
+                	exportEnabled: true,
+                	animationEnabled: true,
+                	title:{
+                		text: "Skills"
+                	},
+                	legend:{
+                		cursor: "pointer",
+                		itemclick: explodePie
+                	},
+                	data: [{
+                		type: "pie",
+                		showInLegend: true,
+                		toolTipContent: "{name}: <strong>{y}%</strong>",
+                		indexLabel: "{name} - {y}%",
+                		dataPoints: [
+                			{ y: 24, name: "C++", exploded: true },
+                			{ y: 18, name: "C" },
+                			{ y: 11, name: "Java" },
+                			{ y: 3, name: "JavaScript" },
+                			{ y: 9, name: "PHP" },
+                			{ y: 13, name: "CSS" },
+                			{ y: 15, name: "HTML"},
+                            { y: 4, name: "Penetration Testing"}
+                		]
+                	}]
+                });
+            chart.render();
+                function explodePie (e) {
+            	if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+            		e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+            	} else {
+            		e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+            	}
+            	e.chart.render();
+            
+            }
+
+            var chart = new CanvasJS.Chart("chartContainer1", {
+                	exportEnabled: true,
+                	animationEnabled: true,
+                	title:{
+                		text: "Tools / Technologies"
+                	},
+                	legend:{
+                		cursor: "pointer",
+                		itemclick: explodePie
+                	},
+                	data: [{
+                		type: "bar",
+                		showInLegend: true,
+                        legendMarkerColor: "grey",
+		                legendText: "List of tools and technologies",
+                		toolTipContent: "{name}: <strong>{y}%</strong>",
+                		indexLabel: "{name} - {y}%",
+                		dataPoints: [
+                			{ y: 26, name: "Microsoft Az 900" },
+                			{ y: 21, name: "MySQL on AZURE" },
+                			{ y: 11, name: "GCP Fundamentals" },
+                			{ y: 13, name: "Kali Linux" },
+                			{ y: 6, name: "IBM Security QRadar" },
+                			{ y: 15, name: "Google IT Support" },
+                			{ y: 15, name: "Linux"},
+                            { y: 18, name: "Microsoft Office"}
+                		]
+                	}]
+                });
+            chart.render();
+                
+            });
         </script>
     </body>
 </html>
