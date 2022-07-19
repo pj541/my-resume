@@ -536,29 +536,8 @@
             </div>
         </main>
         
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-        <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        <script type="text/javascript">
-            window.addEventListener('scroll', reveal);
-            function reveal(){
-                var reveals =document.querySelectorAll('.reveal');
-                for(var i=0; i<reveals.length; i++){
-                    var windowheight= window.innerHeight;
-                    var revealtop = reveals[i].getBoundingClientRect().top;
-                    var revealpoint=150;
-                    if(revealtop<windowheight-revealpoint){
-                        document.getElementById('first').style.display="block";
-                        document.getElementById('second').style.display="block";
-                        document.getElementById('showwhenscrolled').style.display="block";
-                        document.getElementById('showwhenscrolled1').style.display="block";
-                    }
-                }
-            }
-        </script>
+
+        
         <script>
             /* Storing user's device details in a variable*/
             let details = navigator.userAgent;
@@ -579,9 +558,6 @@
             }
             alert("This site is under construction");
         </script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
         <script>
             function displaysome (){
                 document.getElementById('dekhodetails').style.display='block';
@@ -662,6 +638,8 @@
             })
             
         </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script>
             const list=document.querySelectorAll('.list');
             function activeLink(){
@@ -670,9 +648,28 @@
             }
             list.forEach((item)=> item.addEventListener('click', activeLink));
         </script>
-        
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+            function reveal(){
+                var reveals =document.querySelectorAll('.reveal');
+                for(var i=0; i<reveals.length; i++){
+                    var windowheight= window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint=150;
+                    if(revealtop<windowheight-revealpoint){
+                        document.getElementById('first').style.display="block";
+                        document.getElementById('second').style.display="block";
+                        document.getElementById('showwhenscrolled').style.display="block";
+                        document.getElementById('showwhenscrolled1').style.display="block";
+                    }
+                }
+            }
+        </script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
         <script type="text/javascript">
             $(window).on('load', function(){
     
