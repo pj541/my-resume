@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
     <title>
-        Check out my Resume
+        Prajwal Jha Resume
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="maintimeline.css">
     </head>
     <body>
         <div id="loader" class='pac-man'></div>
@@ -442,7 +443,10 @@
             </div>
             <div class="endline"></div>
             <div class="thirdbase">
-                <div>
+                <div class="activity" id="first" style="display:none;">Activity</div>
+                <div class="activity" id="second" style="display:none;">Timeline</div>
+                
+                <div class="reveal" style="margin-top:100px;">
                     <div class="cloud x1"></div>
                     <!-- Time for multiple clouds to dance around -->
                     <div class="cloud x2"></div>
@@ -450,7 +454,8 @@
                     <div class="cloud x4"></div>
                     <div class="cloud x5"></div>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper" id="showwhenscrolled" style="display:none;">
+                    
                     <div class="circlebase">
                         <div id="triangleright"></div>
                         <div class="mybody"></div>
@@ -492,10 +497,68 @@
                     <span class="side-notes" id="two">♪</span>
                 </div>
             </div>
+            
+            <div class="thirdbase-activity">
+                <div class="row" id="showwhenscrolled1" style="display: none;">
+                    <div class="col-md-12">
+                        <div class="main-timeline2">
+                            <div class="timeline">
+                                <span class="icon fa fa-globe"></span>
+                                <a href="#" class="timeline-content">
+                                    <h3 class="title">Participated in the 30 days of Google Cloud Challenge (10/2020 - 11/2020)</h3>
+                                    <p class="description">It was a 30 days of fun learning experience on Google cloud platform with hands-on practice of basic tasks and also understanding new concepts and command lines were a major challenge.</p>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <span class="icon fa fa-rocket"></span>
+                                <a href="#" class="timeline-content">
+                                    <h3 class="title">Participated in an event of Azura 2k20-Freshman Cyber Cup.</h3>
+                                    <p class="description">It was a two-day event hosted by CMR College of Engineering and Technology. The Freshman-Cyber cup event mainly focused on the wordaround of phishing as well as the techniques involved behind the Social Engineering Attacks. Certain tools and command lines of Kali Linux were also introduced.</p>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <span class="icon fa fa-briefcase"></span>
+                                <a href="#" class="timeline-content">
+                                    <h3 class="title"> Finished a Virtual Internship organized by Nasscom and Microsoft (11/2021 - 02/2022).</h3>
+                                    <p class="description">The main objective of this internship was to gain hands-on experience of Microsoft Azure Cloud Services. These services ranged from DevOps to Administration and Monitoring. One of the major challenges in this internship was to deploy any three functional azure services in a web-based or application-based environment. Few basic azure services that I have used in my project were Azure Web-application, Azure for MySQL service, Azure Maps for Navigation. With these services I also learned to create a source pipeline in Azure Cloud using Github Pipeline.</p>
+                                </a>
+                            </div>
+                            <div class="timeline">
+                                <span class="icon fa fa-mobile"></span>
+                                <a href="#" class="timeline-content">
+                                    <h3 class="title">Participated in the Internal Hackathon conducted by CMR Engineering College.</h3>
+                                    <p class="description">The motive of this hackathon was to allow the participants to explore and create optimal solutions for a particular problem or scenario. Participating in this hackathon allowed me to improve my problem solving ability under time pressure as well as it allowed me to focus more on building Industrial level Solutions.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
         <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+            function reveal(){
+                var reveals =document.querySelectorAll('.reveal');
+                for(var i=0; i<reveals.length; i++){
+                    var windowheight= window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint=150;
+                    if(revealtop<windowheight-revealpoint){
+                        document.getElementById('first').style.display="block";
+                        document.getElementById('second').style.display="block";
+                        document.getElementById('showwhenscrolled').style.display="block";
+                        document.getElementById('showwhenscrolled1').style.display="block";
+                    }
+                }
+            }
+        </script>
         <script>
             /* Storing user's device details in a variable*/
             let details = navigator.userAgent;
