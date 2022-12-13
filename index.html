@@ -15,7 +15,12 @@
     <link rel="stylesheet" href="maintimeline.css">
     </head>
     <body>
-        <div id="loader" class='pac-man'></div>
+        <div id="loader" >
+            <a href="#" class="logo">HIRE ME BOSS</a>
+            <div id="loading-bar-id" class="loading-bar">
+                <div class="temporary"></div>
+            </div>
+        </div>
         <main style="display: none;">
             <header>
                 <a href="#" class="logo">HIRE ME BOSS</a>
@@ -114,7 +119,7 @@
                     <div class="bio_base">
                         <div class="bio">
                                 <div class="profilepic">
-                                    <img src="images/profile.jpg" alt="faceID" id="face">
+                                    <img src="images/2.png" alt="faceID" id="face">
                                     <ul class="social-icons">
                                         <li>
                                           <a href="https://www.github.com/pj541/">
@@ -392,7 +397,7 @@
                         <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="images/aws technical_page-0001.jpg">
-                          </div>
+                        </div>
                           <div class="swiper-slide">
                             <img src="images/cert1.jpg">
                           </div>
@@ -537,6 +542,11 @@
                     </div>
                 </div>
             </div>
+            <div class="thirdbase-activity" id="showwhenscrolled2" style="display: none;">
+                <div class="temp">
+                    <img src="images/root1.png">
+                </div>
+            </div>
         </main>
         
 
@@ -664,6 +674,7 @@
                         document.getElementById('second').style.display="block";
                         document.getElementById('showwhenscrolled').style.display="block";
                         document.getElementById('showwhenscrolled1').style.display="block";
+                        document.getElementById('showwhenscrolled2').style.display="block";
                     }
                 }
             }
@@ -677,6 +688,9 @@
             $(window).on('load', function(){
     
                 //
+                /*let loadingbar = document.querySelector('#loading-bar-id');
+                loadingbar.classList.remove('loading-bar');
+                loadingbar.className="loading-bar-extra";*/
                 $("main").fadeIn(50, function(){
                     $("main").show();
                 });
